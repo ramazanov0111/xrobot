@@ -1,0 +1,597 @@
+{% extends 'services/base.html' %}
+{% block content %}
+<!--SERVICES AREA-->
+<section id="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12  wow bounce">
+                <div class="section-heading text-center text-uppercase  wow bounceInUp">
+                    <h2>OUR <span>SERVICeS</span></h2>
+                </div>
+            </div>
+                <div class="container">
+                    <div class="row">
+                        {% for category in category_list %}
+                            <div class="col-sm-6 col-md-3 wow shake">
+                                <div class="single-item text-center">
+                                    <i class="fa fa-mobile"></i>
+                                    <a href="{{ category.get_absolute_url }}">
+                                        <h4 class="text-uppercase">{{ category.name }}</h4>
+                                    </a>
+                                    <p>{{ category.description }}</p>
+                                    <a href="#" class="btn btn-red text-uppercase">more</a>
+                                </div>
+                            </div>
+                        {% endfor %}
+
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+<!--team section-->
+<section id="team">
+    <div class="container">
+        <div class="section-heading text-center text-uppercase wow  wow bounceInRight">
+            <h2>OUR <span>team</span></h2>
+        </div>
+        <div class="row  wow bounceInLeft">
+            <div class="col-sm-6 col-md-3">
+                <div class="single-team">
+                    <img src="../../static/img/team1.jpg" alt="">
+
+                    <h3>Web Designer</h3>
+
+                    <p>Lorem ipsum dolor sit amet,</p>
+
+                    <div class="member-social-icon text-center">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="single-team">
+                    <img src="../../static/img/team2.jpg" alt="">
+
+                    <h3>Web Developer</h3>
+
+                    <p>Lorem ipsum dolor sit amet,</p>
+
+                    <div class="member-social-icon text-center">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="single-team">
+                    <img src="../../static/img/team3.jpg" alt="">
+
+                    <h3>Web Designer</h3>
+
+                    <p>Lorem ipsum dolor sit amet,</p>
+
+                    <div class="member-social-icon text-center">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="single-team">
+                    <img src="../../static/img/team4.jpg" alt="">
+
+                    <h3>Apps Developer</h3>
+
+                    <p>Lorem ipsum dolor sit amet,</p>
+
+                    <div class="member-social-icon text-center">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="skill-heading text-center text-uppercase">
+            <h3>skill</h3>
+        </div>
+        <div class="row">
+            <div class="bar">
+                <div class="col-sm-3 col-xs-3">
+                    <h4>WordPress</h4>
+                </div>
+                <div class="col-sm-8 col-xs-8">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                             aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                    <h4>80%</h4>
+                </div>
+            </div>
+            <div class="wp-bar bar">
+                <div class="col-sm-3 col-xs-3">
+                    <h4>HTML5</h4>
+                </div>
+                <div class="col-sm-8 col-xs-8">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                             aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                    <h4>90%</h4>
+                </div>
+            </div>
+            <div class="wp-bar bar">
+                <div class="col-sm-3 col-xs-3">
+                    <h4>CSS3</h4>
+                </div>
+                <div class="col-sm-8 col-xs-8">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                             aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                    <h4>85%</h4>
+                </div>
+            </div>
+            <div class="wp-bar bar">
+                <div class="col-sm-3 col-xs-3">
+                    <h4>Responsive Design</h4>
+                </div>
+                <div class="col-sm-8 col-xs-8">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                             aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-xs-1">
+                    <h4>80%</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--gallery area-->
+<section id="gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="section-heading text-center text-uppercase  wow shake">
+                    <h2>OUR <span>GALLERY</span></h2>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis fugiat nulla
+                        pariatur.
+                        Excepteur sint occaecat cupidatat nonenim ad minim veniam, proident, sunt in
+                        culpa qui officia
+                        deserunt.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="gallery-btn text-center text-uppercase">
+        <a href="#" class="active btn btn-trans" data-filter="*">ALL</a>
+        <a href="#" class="btn btn-trans" data-filter=".web">CORPORATE WEB SITE</a>
+        <a href="#" class="btn btn-trans" data-filter=".design">RESPONSIVE DESIGN</a>
+        <a href="#" class="btn btn-trans" data-filter=".app">MOBILE aPPS</a>
+        <a href="#" class="btn btn-trans" data-filter=".theme">WORDPRESS THEME</a>
+        <a href="#" class="btn btn-trans" data-filter=".hosting">WEB HOSTING</a>
+    </div>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <div class="gellery-item text-center">
+                <div class="single-gl web theme col-md-2 col-sm-3">
+                    <img src="../../static/img/gl1.jpg" alt="">
+
+                    <div class="gl-overlay">
+                        <div class="caption">
+                            <a href="../../static/img/gl1.jpg" data-gallery="prettyPhoto"><i
+                                    class="fa fa-search"></i></a>
+                            <a href="#"><i class="fa fa-expand"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-gl web col-md-2 col-sm-3">
+                    <img src="../../static/img/gl2.jpg" alt="">
+
+                    <div class="gl-overlay">
+                        <div class="caption">
+                            <a href="../../static/img/gl2.jpg" data-gallery="prettyPhoto"><i
+                                    class="fa fa-search"></i></a>
+                            <a href="#"><i class="fa fa-expand"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-gl design theme col-md-2 col-sm-3">
+                    <img src="../../static/img/gl3.jpg" alt="">
+
+                    <div class="gl-overlay">
+                        <div class="caption">
+                            <a href="../../static/img/gl3.jpg" data-gallery="prettyPhoto"><i
+                                    class="fa fa-search"></i></a>
+                            <a href="#"><i class="fa fa-expand"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-gl hosting design col-md-2  col-sm-3">
+                    <img src="../../static/img/gl4.jpg" alt="">
+
+                    <div class="gl-overlay">
+                        <div class="caption">
+                            <a href="../../static/img/gl5.jpg" data-gallery="prettyPhoto"><i
+                                    class="fa fa-search"></i></a>
+                            <a href="#"><i class="fa fa-expand"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-gl design web col-md-2 col-sm-3">
+                    <img src="../../static/img/gl5.jpg" alt="">
+
+                    <div class="gl-overlay">
+                        <div class="caption">
+                            <a href="../../static/img/gl5.jpg" data-gallery="prettyPhoto"><i
+                                    class="fa fa-search"></i></a>
+                            <a href="#"><i class="fa fa-expand"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-gl hosting design col-md-2 col-sm-3">
+                    <img src="../../static/img/gl6.jpg" alt="">
+
+                    <div class="gl-overlay">
+                        <div class="caption">
+                            <a href="../../static/img/gl6.jpg" data-gallery="prettyPhoto"><i
+                                    class="fa fa-search"></i></a>
+                            <a href="#"><i class="fa fa-expand"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-gl app theme col-md-2 col-sm-3">
+                    <img src="../../static/img/gl7.jpg" alt="">
+
+                    <div class="gl-overlay">
+                        <div class="caption">
+                            <a href="../../static/img/gl7.jpg" data-gallery="prettyPhoto"><i
+                                    class="fa fa-search"></i></a>
+                            <a href="#"><i class="fa fa-expand"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-gl hosting web col-md-2 col-sm-3">
+                    <img src="../../static/img/gl8.jpg" alt="">
+
+                    <div class="gl-overlay">
+                        <div class="caption">
+                            <a href="../../static/img/gl8.jpg" data-gallery="prettyPhoto"><i
+                                    class="fa fa-search"></i></a>
+                            <a href="#"><i class="fa fa-expand"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-gl app col-md-2 col-sm-3">
+                    <img src="../../static/img/gl9.jpg" alt="">
+
+                    <div class="gl-overlay">
+                        <div class="caption">
+                            <a href="../../static/img/gl9.jpg" data-gallery="prettyPhoto"><i
+                                    class="fa fa-search"></i></a>
+                            <a href="#"><i class="fa fa-expand"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-gl app theme col-md-2 col-sm-3">
+                    <img src="../../static/img/gl10.jpg" alt="">
+
+                    <div class="gl-overlay">
+                        <div class="caption">
+                            <a href="../../static/img/gl10.jpg" data-gallery="prettyPhoto"><i
+                                    class="fa fa-search"></i></a>
+                            <a href="#"><i class="fa fa-expand"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--our price area-->
+<section id="price">
+    <div class="container">
+        <div class="section-heading text-center text-uppercase">
+            <h2>OUR <span>price</span></h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="single-price text-center wow swing">
+                    <div class="price-top">
+                        <h3>Pro Package</h3>
+                        <i class="fa fa-lightbulb-o"></i>
+
+                        <h1><sup>&#36;</sup>99<sub>/month</sub></h1>
+                    </div>
+                    <div class="price-bottom">
+                        <p>Lorem ipsum dolor sit</p>
+
+                        <p>Amet, consectetur</p>
+
+                        <p> Dipiscing elit sed</p>
+
+                        <p> Musmod tempor</p>
+
+                        <p>Vcididunt ut labore </p>
+                        <a href="#" class="btn text-uppercase">SUBSCRIBE NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="single-price text-center wow swing">
+                    <div class="price-top">
+                        <h3>Standard Package</h3>
+                        <i class="fa fa-globe"></i>
+
+                        <h1><sup>&#36;</sup>110<sub>/month</sub></h1>
+                    </div>
+                    <div class="price-bottom">
+                        <p>Lorem ipsum dolor sit</p>
+
+                        <p>Amet, consectetur</p>
+
+                        <p> Dipiscing elit sed</p>
+
+                        <p> Musmod tempor</p>
+
+                        <p>Vcididunt ut labore </p>
+                        <a href="#" class="btn text-uppercase">SUBSCRIBE NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="single-price text-center wow swing">
+                    <div class="price-top">
+                        <h3>Basic Package</h3>
+                        <i class="fa fa-clock-o"></i>
+
+                        <h1><sup>&#36;</sup>150<sub>/month</sub></h1>
+                    </div>
+                    <div class="price-bottom">
+                        <p>Lorem ipsum dolor sit</p>
+
+                        <p>Amet, consectetur</p>
+
+                        <p> Dipiscing elit sed</p>
+
+                        <p> Musmod tempor</p>
+
+                        <p>Vcididunt ut labore </p>
+                        <a href="#" class="btn text-uppercase">SUBSCRIBE NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--our news area-->
+<section id="news">
+    <div class="section-heading news-heading text-center text-uppercase wow swing">
+        <h2>OUR <span>News</span></h2>
+    </div>
+    <div class="container">
+        <div class="row no-gutter">
+            <div class="col-md-7 col-md-offset-1">
+
+                <div class="latest-news">
+
+                    <h3>Latest News</h3>
+
+                    <div class="news-content">
+                        <div class="news-date">
+                            <h1>21</h1>
+
+                            <h1>Dec</h1>
+                        </div>
+                        <div class="news-text">
+                            <h5>Enim ad minim veniam, quis nostrud </h5>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+
+                            <p>adipiscing elit, sed do eiusmod tempor</p>
+                            <i class="fa fa-eye"></i> <span>129</span>
+                            <i class="fa fa-comment"></i><span>81</span>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <h1>12</h1>
+
+                            <h1>Dec</h1>
+                        </div>
+                        <div class="news-text">
+                            <h5>Minim veniam, quis nostrud uenim ad </h5>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+
+                            <p>adipiscing elit, sed do eiusmod tempor</p>
+                            <i class="fa fa-eye"></i> <span>129</span>
+                            <i class="fa fa-comment"></i><span>81</span>
+                        </div>
+                    </div>
+                    <div class="news-content wow bounceInLeft">
+                        <div class="news-date">
+                            <h1>12</h1>
+
+                            <h1>Dec</h1>
+                        </div>
+                        <div class="news-text">
+                            <h5>Quis ad minim veniam, quis nostrud </h5>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur</p>
+
+                            <p>adipiscing elit, sed do eiusmod tempor</p>
+                            <i class="fa fa-eye"></i> <span>129</span>
+                            <i class="fa fa-comment"></i><span>81</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="news-list">
+
+                    <div class="single-news">
+                        <div class="list-date">
+                            <h4>10</h4>
+                            <h4>Dec</h4>
+                        </div>
+                        <div class="list-text">
+                            <a href="#"><h5>Uenim ad minim veniam</h5></a>
+
+                            <p>Lorem ipsum dolor sit amet consectetur elit, sed do eiusmod tempor</p>
+                            <i class="fa fa-eye"></i> <span>129</span>
+                            <i class="fa fa-comment"></i><span>81</span>
+                        </div>
+                    </div>
+                    <div class="single-news">
+                        <div class="list-date">
+                            <h4>10</h4>
+                            <h4>Dec</h4>
+                        </div>
+                        <div class="list-text">
+                            <a href="#"><h5>Uenim ad minim veniam</h5></a>
+
+                            <p>Lorem ipsum dolor sit ame consectetur elit, sed do eiusmod tempor</p>
+                            <i class="fa fa-eye"></i> <span>129</span>
+                            <i class="fa fa-comment"></i><span>81</span>
+                        </div>
+                    </div>
+                    <div class="single-news">
+                        <div class="list-date">
+                            <h4>10</h4>
+                            <h4>Dec</h4>
+                        </div>
+                        <div class="list-text">
+                            <a href="#"><h5>Uenim ad minim veniam</h5></a>
+
+                            <p>Lorem ipsum dolor sit ame consecteturelit, sed do eiusmod tempor</p>
+                            <i class="fa fa-eye"></i> <span>129</span>
+                            <i class="fa fa-comment"></i><span>81</span>
+                        </div>
+                    </div>
+                    <div class="single-news">
+                        <div class="list-date">
+                            <h4>10</h4>
+                            <h4>Dec</h4>
+                        </div>
+                        <div class="list-text">
+                            <a href="#"><h5>Uenim ad minim veniam</h5></a>
+
+                            <p>Lorem ipsum dolor sit amet consectetur elit, sed do eiusmod tempor</p>
+                            <i class="fa fa-eye"></i> <span>129</span>
+                            <i class="fa fa-comment"></i><span>81</span>
+                        </div>
+                    </div>
+                    <div class="single-news">
+                        <div class="list-date">
+                            <h4>10</h4>
+                            <h4>Dec</h4>
+                        </div>
+                        <div class="list-text">
+                            <a href="#"><h5>Uenim ad minim veniam</h5></a>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur elit sed do eiusmod tempor</p>
+                            <i class="fa fa-eye"></i> <span>129</span>
+                            <i class="fa fa-comment"></i><span>81</span>
+                        </div>
+                    </div>
+                    <div class="single-news">
+                        <div class="list-date">
+                            <h4>10</h4>
+                            <h4>Dec</h4>
+                        </div>
+                        <div class="list-text">
+                            <a href="#"><h5>Uenim ad minim veniam</h5></a>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor</p>
+                            <i class="fa fa-eye"></i> <span>129</span>
+                            <i class="fa fa-comment"></i><span>81</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--contact heading-->
+<section id="contact">
+    <div class="section-heading contact-heading text-center text-uppercase">
+        <h2>Наши <span>Контакты</span></h2>
+    </div>
+
+    <div id="map">
+
+
+    </div>
+    <div id="map-overlay" class="text-left text-uppercase">
+        <div class="container">
+            <h2>+7(938) 783-59-30</h2>
+
+            <h2>rmznv.prog@gmail.com</h2>
+        </div>
+    </div>
+    <!-- contact massage-->
+    <div class="contact-form">
+        <div class="container">
+            <div class="row">
+                <form action="#">
+
+                    <div class="col-sm-4">
+                        <label for="usr">Имя</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="number">Номер телефона</label>
+                        <input type="number" class="form-control" id="number">
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="massage">Сообщение</label>
+                        <textarea class="form-control" rows="10" id="massage"></textarea>
+
+                        <button type="submit" class="btn red-btn"> Отправить </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+{% endblock content %}
+<!-- footer-area-->

@@ -1,0 +1,34 @@
+{% extends 'services/base.html' %}
+
+{% block service %}
+<!--SERVICES AREA-->
+<section id="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12  wow bounce">
+                <div class="section-heading text-center text-uppercase  wow bounceInUp">
+                    <h2>OUR <span>SERVICeS</span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            {% for service in service_list %}
+                <div class="col-sm-6 col-md-3 wow shake">
+                    <div class="single-item text-center">
+                        <i class="fa fa-mobile"></i>
+                        <a href="{{ service.get_absolute_url }}">
+                            <h4 class="text-uppercase">{{ service.title }}</h4>
+                        </a>
+                        <h5>Стоимость - {{ service.price }} руб.</h5>
+                        <a href="#" class="btn btn-red text-uppercase">Заказать</a>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+{% endblock service %}
